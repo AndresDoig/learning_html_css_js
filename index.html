@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox HTML, CSS y JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ENCABEZADO PRINCIPAL -->
+    <header>
+        <h1>🚀 Sandbox para Principiantes</h1>
+        <p>Aprende HTML, CSS y JavaScript experimentando</p>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="#texto">Texto</a></li>
+            <li><a href="#imagenes">Imágenes</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#formularios">Formularios</a></li>
+            <li><a href="#interactivos">Elementos Interactivos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- SECCIÓN: ELEMENTOS DE TEXTO -->
+        <section id="texto">
+            <h2>📝 Elementos de Texto</h2>
+            
+            <!-- Diferentes tipos de encabezados -->
+            <div class="ejemplo">
+                <h3>Encabezados (h1 a h6)</h3>
+                <h1>Encabezado nivel 1</h1>
+                <h2>Encabezado nivel 2</h2>
+                <h3>Encabezado nivel 3</h3>
+                <h4>Encabezado nivel 4</h4>
+                <h5>Encabezado nivel 5</h5>
+                <h6>Encabezado nivel 6</h6>
+            </div>
+
+            <!-- Párrafos con diferentes estilos -->
+            <div class="ejemplo">
+                <h3>Párrafos y texto con formato</h3>
+                <p>Este es un párrafo normal. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+                <p class="texto-centrado">Este párrafo está centrado y tiene una clase CSS aplicada.</p>
+                
+                <p class="texto-destacado">Este párrafo tiene estilo destacado con fondo de color.</p>
+                
+                <!-- Elementos inline -->
+                <p>Aquí tienes texto con diferentes formatos: 
+                    <strong>texto en negrita</strong>, 
+                    <em>texto en cursiva</em>, 
+                    <u>texto subrayado</u>, 
+                    <mark>texto resaltado</mark>,
+                    <small>texto pequeño</small>, y
+                    <span class="texto-colorido">texto con color personalizado</span>.
+                </p>
+            </div>
+
+            <!-- Citas y código -->
+            <div class="ejemplo">
+                <h3>Citas y código</h3>
+                <blockquote>
+                    "El único modo de hacer un gran trabajo es amar lo que haces." - Steve Jobs
+                </blockquote>
+                
+                <p>Para crear un párrafo en HTML usa: <code>&lt;p&gt;tu texto aquí&lt;/p&gt;</code></p>
+                
+                <pre><code>// Ejemplo de código en bloque
+function saludar(nombre) {
+    return `¡Hola, ${nombre}!`;
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: IMÁGENES -->
+        <section id="imagenes">
+            <h2>🖼️ Trabajando con Imágenes</h2>
+            
+            <div class="ejemplo">
+                <h3>Imagen básica</h3>
+                <img src="https://picsum.photos/300/200?random=1" alt="Imagen de ejemplo" class="imagen-basica">
+                <p><em>Imagen con tamaño fijo y bordes redondeados</em></p>
+            </div>
+
+            <div class="ejemplo">
+                <h3>Imagen centrada</h3>
+                <img src="https://picsum.photos/250/150?random=2" alt="Imagen centrada" class="imagen-centrada">
+            </div>
+
+            <div class="ejemplo">
+                <h3>Imágenes superpuestas</h3>
+                <div class="contenedor-superpuesto">
+                    <img src="https://picsum.photos/300/200?random=3" alt="Imagen de fondo" class="imagen-fondo">
+                    <img src="https://picsum.photos/150/100?random=4" alt="Imagen superpuesta" class="imagen-superpuesta">
+                    <p class="texto-superpuesto">Texto sobre la imagen</p>
+                </div>
+            </div>
+
+            <div class="ejemplo">
+                <h3>Galería de imágenes</h3>
+                <div class="galeria">
+                    <img src="https://picsum.photos/150/150?random=5" alt="Galería 1">
+                    <img src="https://picsum.photos/150/150?random=6" alt="Galería 2">
+                    <img src="https://picsum.photos/150/150?random=7" alt="Galería 3">
+                    <img src="https://picsum.photos/150/150?random=8" alt="Galería 4">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: LISTAS -->
+        <section id="listas">
+            <h2>📋 Listas</h2>
+            
+            <div class="ejemplo">
+                <h3>Lista sin orden</h3>
+                <ul>
+                    <li>HTML - Estructura del contenido</li>
+                    <li>CSS - Estilos y diseño</li>
+                    <li>JavaScript - Interactividad</li>
+                    <li>Responsive Design - Adaptabilidad</li>
+                </ul>
+            </div>
+
+            <div class="ejemplo">
+                <h3>Lista ordenada</h3>
+                <ol>
+                    <li>Aprender HTML básico</li>
+                    <li>Dominar CSS</li>
+                    <li>Introducirse a JavaScript</li>
+                    <li>Practicar con proyectos</li>
+                    <li>Crear tu portafolio</li>
+                </ol>
+            </div>
+
+            <div class="ejemplo">
+                <h3>Lista de descripción</h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Lenguaje de marcado para crear la estructura de páginas web</dd>
+                    
+                    <dt>CSS</dt>
+                    <dd>Lenguaje de estilos para diseñar y dar formato a páginas web</dd>
+                    
+                    <dt>JavaScript</dt>
+                    <dd>Lenguaje de programación para añadir interactividad</dd>
+                </dl>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: FORMULARIOS -->
+        <section id="formularios">
+            <h2>📝 Formularios</h2>
+            
+            <div class="ejemplo">
+                <h3>Formulario de contacto</h3>
+                <form class="formulario-ejemplo">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="1" max="120">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="color-favorito">Color favorito:</label>
+                        <input type="color" id="color-favorito" name="color-favorito" value="#3498db">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    
+                    <div class="campo">
+                        <label>
+                            <input type="checkbox" name="newsletter"> 
+                            Quiero recibir el newsletter
+                        </label>
+                    </div>
+                    
+                    <div class="campo">
+                        <label>Nivel de experiencia:</label>
+                        <label><input type="radio" name="nivel" value="principiante"> Principiante</label>
+                        <label><input type="radio" name="nivel" value="intermedio"> Intermedio</label>
+                        <label><input type="radio" name="nivel" value="avanzado"> Avanzado</label>
+                    </div>
+                    
+                    <button type="submit" class="boton-enviar">Enviar formulario</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: ELEMENTOS INTERACTIVOS -->
+        <section id="interactivos">
+            <h2>⚡ Elementos Interactivos con JavaScript</h2>
+            
+            <div class="ejemplo">
+                <h3>Botones interactivos</h3>
+                <button onclick="cambiarColor()" class="boton-interactivo">Cambiar color de fondo</button>
+                <button onclick="mostrarAlerta()" class="boton-interactivo">Mostrar alerta</button>
+                <button onclick="toggleVisibilidad()" class="boton-interactivo">Mostrar/Ocultar elemento</button>
+                
+                <div id="elemento-oculto" class="caja-oculta">
+                    ¡Sorpresa! Este elemento se puede mostrar y ocultar.
+                </div>
+            </div>
+
+            <div class="ejemplo">
+                <h3>Contador interactivo</h3>
+                <div class="contador">
+                    <button onclick="decrementar()">-</button>
+                    <span id="numero-contador">0</span>
+                    <button onclick="incrementar()">+</button>
+                </div>
+            </div>
+
+            <div class="ejemplo">
+                <h3>Calculadora simple</h3>
+                <div class="calculadora">
+                    <input type="number" id="num1" placeholder="Número 1">
+                    <select id="operacion">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">×</option>
+                        <option value="/"">÷</option>
+                    </select>
+                    <input type="number" id="num2" placeholder="Número 2">
+                    <button onclick="calcular()">=</button>
+                    <div id="resultado" class="resultado">Resultado: </div>
+                </div>
+            </div>
+
+            <div class="ejemplo">
+                <h3>Validación de formulario en tiempo real</h3>
+                <div class="validacion">
+                    <input type="text" id="input-validacion" placeholder="Escribe algo..." oninput="validarTexto()">
+                    <div id="mensaje-validacion"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2025 Sandbox HTML/CSS/JS - Hecho para aprender 🎓</p>
+        <p>Experimenta modificando el código y observa los cambios</p>
+    </footer>
+
+    <!-- SCRIPT DE JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
